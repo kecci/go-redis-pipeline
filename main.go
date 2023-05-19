@@ -33,7 +33,6 @@ func main() {
 	log.Printf("processing %v keys time singleCommandRedis: %+v or %+v/key\n", totalKey, durSingle, time.Duration(durSingle.Nanoseconds()/int64(totalKey)))
 	log.Printf("processing %v keys time pipelineRedis: %+v or %+v/key\n", totalKey, durPipe, time.Duration(durPipe.Nanoseconds()/int64(totalKey)))
 	log.Printf("processing %v keys time singlePipelineRedis: %+v or %+v/key\n", 1, durSinglePipe, time.Duration(durSinglePipe.Nanoseconds()/1))
-
 }
 
 type RedisClient struct {
